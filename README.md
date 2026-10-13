@@ -13,6 +13,12 @@ spot and futures, price grouping, volume heatmap and auto-refresh.
 [![Node.js](https://img.shields.io/badge/Node.js-24.x-5FA04E?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
+🌐 **Live:** [crypto-orderbook-sandy.vercel.app](https://crypto-orderbook-sandy.vercel.app/)
+
+<a href="https://crypto-orderbook-sandy.vercel.app/">
+  <img src="docs/preview.png" alt="Crypto Order Book — BTC/USDT spot order book on Binance with price grouping and volume heatmap" width="880">
+</a>
+
 </div>
 
 ---
@@ -210,6 +216,8 @@ crypto-orderbook/
 ├── components/
 │   ├── OrderBook.tsx           # header, spread, grouping, two sides
 │   └── OrderBookSide.tsx       # one side with the volume heatmap
+├── docs/
+│   └── preview.png             # README screenshot
 ├── lib/
 │   ├── exchanges/              # one adapter per exchange + index.ts dispatcher
 │   ├── aggregate.ts            # price grouping and step suggestions
