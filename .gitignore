@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# build output
+.next/
+out/
+*.tsbuildinfo
+
+# local overrides and secrets
+# (.env itself is committed on purpose: it holds only public, non-secret defaults)
+.env*.local
+
+# deployment
+.vercel
+
+# logs and OS files
+npm-debug.log*
+.DS_Store
+Thumbs.db

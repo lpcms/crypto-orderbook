@@ -1,0 +1,48 @@
+{
+  "name": "crypto-orderbook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Crypto Order Book - real-time order book from Binance, Coinbase, Bitfinex, Kraken, Bybit and OKX with spot/futures switch and price grouping.",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "check": "tsc --noEmit && eslint .",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.6.1",
+    "eslint": "^10.12.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "postcss": "^8.5.30",
+    "prettier": "^3.9.10",
+    "tailwindcss": "^3.4.19",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.71.2"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css}": [
+      "prettier --write"
+    ]
+  }
+}
